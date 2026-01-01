@@ -1,0 +1,291 @@
+
+Starting Nmap 7.98 ( https://nmap.org ) at 2025-12-31 20:22 +0530
+NSE: Loaded 158 scripts for scanning.
+NSE: Script Pre-scanning.
+Initiating NSE at 20:22
+Completed NSE at 20:22, 0.00s elapsed
+Initiating NSE at 20:22
+Completed NSE at 20:22, 0.00s elapsed
+Initiating NSE at 20:22
+Completed NSE at 20:22, 0.00s elapsed
+Initiating SYN Stealth Scan at 20:22
+Scanning localhost (127.0.0.1) [1000 ports]
+Discovered open port 135/tcp on 127.0.0.1
+Discovered open port 445/tcp on 127.0.0.1
+Discovered open port 3306/tcp on 127.0.0.1
+Discovered open port 7778/tcp on 127.0.0.1
+Discovered open port 1042/tcp on 127.0.0.1
+Discovered open port 1043/tcp on 127.0.0.1
+Completed SYN Stealth Scan at 20:22, 0.09s elapsed (1000 total ports)
+Initiating Service scan at 20:22
+Scanning 6 services on localhost (127.0.0.1)
+Completed Service scan at 20:22, 22.25s elapsed (6 services on 1 host)
+Initiating OS detection (try #1) against localhost (127.0.0.1)
+Retrying OS detection (try #2) against localhost (127.0.0.1)
+Retrying OS detection (try #3) against localhost (127.0.0.1)
+Retrying OS detection (try #4) against localhost (127.0.0.1)
+Retrying OS detection (try #5) against localhost (127.0.0.1)
+NSE: Script scanning 127.0.0.1.
+Initiating NSE at 20:23
+Completed NSE at 20:23, 14.25s elapsed
+Initiating NSE at 20:23
+Completed NSE at 20:23, 1.89s elapsed
+Initiating NSE at 20:23
+Completed NSE at 20:23, 0.00s elapsed
+Nmap scan report for localhost (127.0.0.1)
+Host is up (0.00030s latency).
+Not shown: 994 closed tcp ports (reset)
+PORT     STATE SERVICE       VERSION
+135/tcp  open  msrpc         Microsoft Windows RPC
+445/tcp  open  microsoft-ds?
+1042/tcp open  afrog?
+| fingerprint-strings: 
+|   DNSStatusRequestTCP, DNSVersionBindReqTCP, Help, RPCCheck, SSLSessionReq, TLSSessionReq, TerminalServerCookie: 
+|     HTTP/1.1 400 Bad Request
+|     Connection: close
+|   GetRequest: 
+|     HTTP/1.1 404 Not Found
+|     Vary: Origin
+|     Content-Security-Policy: default-src 'none'
+|     Cross-Origin-Resource-Policy: cross-origin
+|     Origin-Agent-Cluster: ?1
+|     Referrer-Policy: no-referrer
+|     Strict-Transport-Security: max-age=31536000; includeSubDomains
+|     X-Content-Type-Options: nosniff
+|     X-DNS-Prefetch-Control: off
+|     X-Download-Options: noopen
+|     X-Frame-Options: SAMEORIGIN
+|     X-Permitted-Cross-Domain-Policies: none
+|     X-XSS-Protection: 0
+|     Content-Type: text/html; charset=utf-8
+|     Content-Length: 139
+|     Date: Wed, 31 Dec 2025 14:52:38 GMT
+|     Connection: close
+|     <!DOCTYPE html>
+|     <html lang="en">
+|     <head>
+|     <meta charset="utf-8">
+|     <title>Error</title>
+|     </head>
+|     <body>
+|     <pre>Cannot GET /</pre>
+|     </body>
+|     </html>
+|   HTTPOptions, RTSPRequest: 
+|     HTTP/1.1 204 No Content
+|     Vary: Origin, Access-Control-Request-Headers
+|     Access-Control-Allow-Methods: GET,HEAD,PUT,PATCH,POST,DELETE
+|     Content-Length: 0
+|     Date: Wed, 31 Dec 2025 14:52:38 GMT
+|_    Connection: close
+1043/tcp open  ssl/boinc?
+| tls-alpn: 
+|_  http/1.1
+| fingerprint-strings: 
+|   FourOhFourRequest: 
+|     HTTP/1.1 404 Not Found
+|     Vary: Origin
+|     Content-Security-Policy: default-src 'none'
+|     Cross-Origin-Resource-Policy: cross-origin
+|     Origin-Agent-Cluster: ?1
+|     Referrer-Policy: no-referrer
+|     Strict-Transport-Security: max-age=31536000; includeSubDomains
+|     X-Content-Type-Options: nosniff
+|     X-DNS-Prefetch-Control: off
+|     X-Download-Options: noopen
+|     X-Frame-Options: SAMEORIGIN
+|     X-Permitted-Cross-Domain-Policies: none
+|     X-XSS-Protection: 0
+|     Content-Type: text/html; charset=utf-8
+|     Content-Length: 174
+|     Date: Wed, 31 Dec 2025 14:52:50 GMT
+|     Connection: close
+|     <!DOCTYPE html>
+|     <html lang="en">
+|     <head>
+|     <meta charset="utf-8">
+|     <title>Error</title>
+|     </head>
+|     <body>
+|     <pre>Cannot GET /nice%20ports%2C/Tri%6Eity.txt%2ebak</pre>
+|     </body>
+|     </html>
+|   GetRequest: 
+|     HTTP/1.1 404 Not Found
+|     Vary: Origin
+|     Content-Security-Policy: default-src 'none'
+|     Cross-Origin-Resource-Policy: cross-origin
+|     Origin-Agent-Cluster: ?1
+|     Referrer-Policy: no-referrer
+|     Strict-Transport-Security: max-age=31536000; includeSubDomains
+|     X-Content-Type-Options: nosniff
+|     X-DNS-Prefetch-Control: off
+|     X-Download-Options: noopen
+|     X-Frame-Options: SAMEORIGIN
+|     X-Permitted-Cross-Domain-Policies: none
+|     X-XSS-Protection: 0
+|     Content-Type: text/html; charset=utf-8
+|     Content-Length: 139
+|     Date: Wed, 31 Dec 2025 14:52:49 GMT
+|     Connection: close
+|     <!DOCTYPE html>
+|     <html lang="en">
+|     <head>
+|     <meta charset="utf-8">
+|     <title>Error</title>
+|     </head>
+|     <body>
+|     <pre>Cannot GET /</pre>
+|     </body>
+|     </html>
+|   HTTPOptions, RTSPRequest: 
+|     HTTP/1.1 204 No Content
+|     Vary: Origin, Access-Control-Request-Headers
+|     Access-Control-Allow-Methods: GET,HEAD,PUT,PATCH,POST,DELETE
+|     Content-Length: 0
+|     Date: Wed, 31 Dec 2025 14:52:49 GMT
+|_    Connection: close
+| ssl-cert: Subject: 
+| Subject Alternative Name: URI:http://example.org/webid#me
+| Issuer: 
+| Public Key type: rsa
+| Public Key bits: 1024
+| Signature Algorithm: sha256WithRSAEncryption
+| Not valid before: 2025-12-31T06:45:09
+| Not valid after:  2026-12-31T06:45:09
+| MD5:     6b7c ec05 1525 1872 034b f958 e642 5382
+| SHA-1:   8b6f 93e8 637e 6f2d 5016 6360 aa99 99a4 8e5e 1128
+|_SHA-256: a88b 3b30 31bc 5fa6 db1c 04ea c620 d9e3 35cc c337 d583 fc69 6729 0b70 a9f1 1def
+|_ssl-date: TLS randomness does not represent time
+3306/tcp open  mysql         MySQL 8.0.44
+| ssl-cert: Subject: commonName=MySQL_Server_8.0.44_Auto_Generated_Server_Certificate
+| Issuer: commonName=MySQL_Server_8.0.44_Auto_Generated_CA_Certificate
+| Public Key type: rsa
+| Public Key bits: 2048
+| Signature Algorithm: sha256WithRSAEncryption
+| Not valid before: 2025-10-22T10:59:22
+| Not valid after:  2035-10-20T10:59:22
+| MD5:     e2a0 6d0c 6801 6776 924f 1b03 8f59 b11d
+| SHA-1:   08dd d0d2 6af8 553e ff1c 890a ad8f a5f3 eb03 d646
+|_SHA-256: 19c1 f755 b134 9114 f2d1 558a 7211 c9f6 b2e9 1d8b a379 a6ad 996e d886 ad44 8a9e
+| mysql-info: 
+|   Protocol: 10
+|   Version: 8.0.44
+|   Thread ID: 27
+|   Capabilities flags: 65535
+|   Some Capabilities: SwitchToSSLAfterHandshake, IgnoreSigpipes, Speaks41ProtocolOld, Speaks41ProtocolNew, LongColumnFlag, ODBCClient, IgnoreSpaceBeforeParenthesis, Support41Auth, DontAllowDatabaseTableColumn, InteractiveClient, FoundRows, SupportsTransactions, SupportsLoadDataLocal, SupportsCompression, ConnectWithDatabase, LongPassword, SupportsMultipleStatments, SupportsMultipleResults, SupportsAuthPlugins
+|   Status: Autocommit
+|   Salt: 6.oG?yc{G\x16\x1F4\>\x0B!U%\x02]
+|_  Auth Plugin Name: caching_sha2_password
+|_ssl-date: TLS randomness does not represent time
+7778/tcp open  interwise?
+2 services unrecognized despite returning data. If you know the service/version, please submit the following fingerprints at https://nmap.org/cgi-bin/submit.cgi?new-service :
+==============NEXT SERVICE FINGERPRINT (SUBMIT INDIVIDUALLY)==============
+SF-Port1042-TCP:V=7.98%I=7%D=12/31%Time=695538B6%P=i686-pc-windows-windows
+SF:%r(GetRequest,2AE,"HTTP/1\.1\x20404\x20Not\x20Found\r\nVary:\x20Origin\
+SF:r\nContent-Security-Policy:\x20default-src\x20'none'\r\nCross-Origin-Re
+SF:source-Policy:\x20cross-origin\r\nOrigin-Agent-Cluster:\x20\?1\r\nRefer
+SF:rer-Policy:\x20no-referrer\r\nStrict-Transport-Security:\x20max-age=315
+SF:36000;\x20includeSubDomains\r\nX-Content-Type-Options:\x20nosniff\r\nX-
+SF:DNS-Prefetch-Control:\x20off\r\nX-Download-Options:\x20noopen\r\nX-Fram
+SF:e-Options:\x20SAMEORIGIN\r\nX-Permitted-Cross-Domain-Policies:\x20none\
+SF:r\nX-XSS-Protection:\x200\r\nContent-Type:\x20text/html;\x20charset=utf
+SF:-8\r\nContent-Length:\x20139\r\nDate:\x20Wed,\x2031\x20Dec\x202025\x201
+SF:4:52:38\x20GMT\r\nConnection:\x20close\r\n\r\n<!DOCTYPE\x20html>\n<html
+SF:\x20lang=\"en\">\n<head>\n<meta\x20charset=\"utf-8\">\n<title>Error</ti
+SF:tle>\n</head>\n<body>\n<pre>Cannot\x20GET\x20/</pre>\n</body>\n</html>\
+SF:n")%r(HTTPOptions,D2,"HTTP/1\.1\x20204\x20No\x20Content\r\nVary:\x20Ori
+SF:gin,\x20Access-Control-Request-Headers\r\nAccess-Control-Allow-Methods:
+SF:\x20GET,HEAD,PUT,PATCH,POST,DELETE\r\nContent-Length:\x200\r\nDate:\x20
+SF:Wed,\x2031\x20Dec\x202025\x2014:52:38\x20GMT\r\nConnection:\x20close\r\
+SF:n\r\n")%r(RTSPRequest,D2,"HTTP/1\.1\x20204\x20No\x20Content\r\nVary:\x2
+SF:0Origin,\x20Access-Control-Request-Headers\r\nAccess-Control-Allow-Meth
+SF:ods:\x20GET,HEAD,PUT,PATCH,POST,DELETE\r\nContent-Length:\x200\r\nDate:
+SF:\x20Wed,\x2031\x20Dec\x202025\x2014:52:38\x20GMT\r\nConnection:\x20clos
+SF:e\r\n\r\n")%r(RPCCheck,2F,"HTTP/1\.1\x20400\x20Bad\x20Request\r\nConnec
+SF:tion:\x20close\r\n\r\n")%r(DNSVersionBindReqTCP,2F,"HTTP/1\.1\x20400\x2
+SF:0Bad\x20Request\r\nConnection:\x20close\r\n\r\n")%r(DNSStatusRequestTCP
+SF:,2F,"HTTP/1\.1\x20400\x20Bad\x20Request\r\nConnection:\x20close\r\n\r\n
+SF:")%r(Help,2F,"HTTP/1\.1\x20400\x20Bad\x20Request\r\nConnection:\x20clos
+SF:e\r\n\r\n")%r(SSLSessionReq,2F,"HTTP/1\.1\x20400\x20Bad\x20Request\r\nC
+SF:onnection:\x20close\r\n\r\n")%r(TerminalServerCookie,2F,"HTTP/1\.1\x204
+SF:00\x20Bad\x20Request\r\nConnection:\x20close\r\n\r\n")%r(TLSSessionReq,
+SF:2F,"HTTP/1\.1\x20400\x20Bad\x20Request\r\nConnection:\x20close\r\n\r\n"
+SF:);
+==============NEXT SERVICE FINGERPRINT (SUBMIT INDIVIDUALLY)==============
+SF-Port1043-TCP:V=7.98%T=SSL%I=7%D=12/31%Time=695538C1%P=i686-pc-windows-w
+SF:indows%r(GetRequest,2AE,"HTTP/1\.1\x20404\x20Not\x20Found\r\nVary:\x20O
+SF:rigin\r\nContent-Security-Policy:\x20default-src\x20'none'\r\nCross-Ori
+SF:gin-Resource-Policy:\x20cross-origin\r\nOrigin-Agent-Cluster:\x20\?1\r\
+SF:nReferrer-Policy:\x20no-referrer\r\nStrict-Transport-Security:\x20max-a
+SF:ge=31536000;\x20includeSubDomains\r\nX-Content-Type-Options:\x20nosniff
+SF:\r\nX-DNS-Prefetch-Control:\x20off\r\nX-Download-Options:\x20noopen\r\n
+SF:X-Frame-Options:\x20SAMEORIGIN\r\nX-Permitted-Cross-Domain-Policies:\x2
+SF:0none\r\nX-XSS-Protection:\x200\r\nContent-Type:\x20text/html;\x20chars
+SF:et=utf-8\r\nContent-Length:\x20139\r\nDate:\x20Wed,\x2031\x20Dec\x20202
+SF:5\x2014:52:49\x20GMT\r\nConnection:\x20close\r\n\r\n<!DOCTYPE\x20html>\
+SF:n<html\x20lang=\"en\">\n<head>\n<meta\x20charset=\"utf-8\">\n<title>Err
+SF:or</title>\n</head>\n<body>\n<pre>Cannot\x20GET\x20/</pre>\n</body>\n</
+SF:html>\n")%r(HTTPOptions,D2,"HTTP/1\.1\x20204\x20No\x20Content\r\nVary:\
+SF:x20Origin,\x20Access-Control-Request-Headers\r\nAccess-Control-Allow-Me
+SF:thods:\x20GET,HEAD,PUT,PATCH,POST,DELETE\r\nContent-Length:\x200\r\nDat
+SF:e:\x20Wed,\x2031\x20Dec\x202025\x2014:52:49\x20GMT\r\nConnection:\x20cl
+SF:ose\r\n\r\n")%r(RTSPRequest,D2,"HTTP/1\.1\x20204\x20No\x20Content\r\nVa
+SF:ry:\x20Origin,\x20Access-Control-Request-Headers\r\nAccess-Control-Allo
+SF:w-Methods:\x20GET,HEAD,PUT,PATCH,POST,DELETE\r\nContent-Length:\x200\r\
+SF:nDate:\x20Wed,\x2031\x20Dec\x202025\x2014:52:49\x20GMT\r\nConnection:\x
+SF:20close\r\n\r\n")%r(FourOhFourRequest,2D1,"HTTP/1\.1\x20404\x20Not\x20F
+SF:ound\r\nVary:\x20Origin\r\nContent-Security-Policy:\x20default-src\x20'
+SF:none'\r\nCross-Origin-Resource-Policy:\x20cross-origin\r\nOrigin-Agent-
+SF:Cluster:\x20\?1\r\nReferrer-Policy:\x20no-referrer\r\nStrict-Transport-
+SF:Security:\x20max-age=31536000;\x20includeSubDomains\r\nX-Content-Type-O
+SF:ptions:\x20nosniff\r\nX-DNS-Prefetch-Control:\x20off\r\nX-Download-Opti
+SF:ons:\x20noopen\r\nX-Frame-Options:\x20SAMEORIGIN\r\nX-Permitted-Cross-D
+SF:omain-Policies:\x20none\r\nX-XSS-Protection:\x200\r\nContent-Type:\x20t
+SF:ext/html;\x20charset=utf-8\r\nContent-Length:\x20174\r\nDate:\x20Wed,\x
+SF:2031\x20Dec\x202025\x2014:52:50\x20GMT\r\nConnection:\x20close\r\n\r\n<
+SF:!DOCTYPE\x20html>\n<html\x20lang=\"en\">\n<head>\n<meta\x20charset=\"ut
+SF:f-8\">\n<title>Error</title>\n</head>\n<body>\n<pre>Cannot\x20GET\x20/n
+SF:ice%20ports%2C/Tri%6Eity\.txt%2ebak</pre>\n</body>\n</html>\n");
+No exact OS matches for host (If you know what OS is running on it, see https://nmap.org/submit/ ).
+TCP/IP fingerprint:
+OS:SCAN(V=7.98%E=4%D=12/31%OT=135%CT=1%CU=36679%PV=Y%DS=0%DC=L%G=Y%TM=69553
+OS:8DC%P=i686-pc-windows-windows)SEQ(SP=100%GCD=1%ISR=109%TI=I%CI=I%II=I%SS
+OS:=S%TS=A)SEQ(SP=101%GCD=1%ISR=106%TI=I%CI=I%II=I%SS=S%TS=A)SEQ(SP=104%GCD
+OS:=1%ISR=10B%TI=I%CI=I%II=I%SS=S%TS=A)SEQ(SP=105%GCD=1%ISR=105%TI=I%CI=I%I
+OS:I=I%SS=S%TS=A)SEQ(SP=106%GCD=3%ISR=108%TI=I%CI=I%II=I%SS=S%TS=A)OPS(O1=M
+OS:FFD7NW8ST11%O2=MFFD7NW8ST11%O3=MFFD7NW8NNT11%O4=MFFD7NW8ST11%O5=MFFD7NW8
+OS:ST11%O6=MFFD7ST11)WIN(W1=FFFF%W2=FFFF%W3=FFFF%W4=FFFF%W5=FFFF%W6=FFFF)EC
+OS:N(R=Y%DF=Y%T=80%W=FFFF%O=MFFD7NW8NNS%CC=N%Q=)T1(R=Y%DF=Y%T=80%S=O%A=S+%F
+OS:=AS%RD=0%Q=)T2(R=Y%DF=Y%T=80%W=0%S=Z%A=S%F=AR%O=%RD=0%Q=)T3(R=Y%DF=Y%T=8
+OS:0%W=0%S=Z%A=O%F=AR%O=%RD=0%Q=)T4(R=Y%DF=Y%T=80%W=0%S=A%A=O%F=R%O=%RD=0%Q
+OS:=)T5(R=Y%DF=Y%T=80%W=0%S=Z%A=S+%F=AR%O=%RD=0%Q=)T6(R=Y%DF=Y%T=80%W=0%S=A
+OS:%A=O%F=R%O=%RD=0%Q=)T7(R=Y%DF=Y%T=80%W=0%S=Z%A=S+%F=AR%O=%RD=0%Q=)U1(R=Y
+OS:%DF=N%T=80%IPL=164%UN=0%RIPL=G%RID=G%RIPCK=Z%RUCK=G%RUD=G)IE(R=Y%DFI=N%T
+OS:=80%CD=Z)
+
+Uptime guess: 9.050 days (since Mon Dec 22 19:11:07 2025)
+Network Distance: 0 hops
+TCP Sequence Prediction: Difficulty=256 (Good luck!)
+IP ID Sequence Generation: Incremental
+Service Info: OS: Windows; CPE: cpe:/o:microsoft:windows
+
+Host script results:
+| smb2-security-mode: 
+|   3.1.1: 
+|_    Message signing enabled and required
+| smb2-time: 
+|   date: 2025-12-31T14:53:01
+|_  start_date: N/A
+
+NSE: Script Post-scanning.
+Initiating NSE at 20:23
+Completed NSE at 20:23, 0.00s elapsed
+Initiating NSE at 20:23
+Completed NSE at 20:23, 0.00s elapsed
+Initiating NSE at 20:23
+Completed NSE at 20:23, 0.00s elapsed
+Read data files from: C:\Program Files (x86)\Nmap
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 49.55 seconds
+           Raw packets sent: 1080 (51.090KB) | Rcvd: 2218 (100.258KB)

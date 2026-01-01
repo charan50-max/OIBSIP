@@ -1,0 +1,25 @@
+Nmap Scan Results Summary
+Target: 127.0.0.1
+Date: 31 Dec 2025
+Scan Type: Intense Scan
+
+Open Ports and Services:
+
+135/tcp   - Microsoft Windows RPC
+445/tcp   - Microsoft-DS (SMB File Sharing)
+1042/tcp  - HTTP-based application service (unidentified)
+1043/tcp  - SSL / BOINC service
+3306/tcp  - MySQL Database Server 8.0.44
+7778/tcp  - Interwise service
+
+Key Observations:
+
+• System is running Windows with SMB and RPC services active.
+• MySQL database is running locally on port 3306.
+• Web-based services detected on ports 1042 and 1043.
+• Multiple open ports increase attack surface if exposed externally.
+
+Security Implications:
+
+Open ports represent potential entry points for attackers.  
+Critical services such as SMB (445) and MySQL (3306) should be restricted using firewall rules and strong authentication.
