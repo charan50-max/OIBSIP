@@ -1,0 +1,58 @@
+Nmap Scan Results
+Target: 127.0.0.1 (Localhost)
+Scan Date: 03 January 2026
+Scanner Version: Nmap 7.98
+
+Command Executed:
+nmap -A 127.0.0.1
+
+Host Status:
+Host is up with low latency
+
+Open Ports and Services Detected:
+
+Port 80 TCP
+Service: HTTP
+Server: Apache 2.4.58
+Details: Running on Windows with OpenSSL 3.1.3 and PHP 8.2.12
+
+Port 443 TCP
+Service: HTTPS
+Server: Apache 2.4.58
+Details: SSL certificate expired in 2019
+
+Port 135 TCP
+Service: MSRPC
+Details: Microsoft Windows Remote Procedure Call service
+
+Port 445 TCP
+Service: SMB
+Details: Microsoft file sharing service
+
+Port 3306 TCP
+Service: MySQL
+Server: MariaDB 10.4.32
+Details: Database service exposed on network
+
+Port 1033 TCP
+Service: Unknown
+Details: Responding to HTTP requests
+
+Port 1042 TCP
+Service: Unknown
+Details: Responding to HTTP requests with security headers
+
+Port 1043 TCP
+Service: Unknown
+Details: SSL enabled service with HTTP responses
+
+Security Observations:
+
+1. Expired SSL certificate on HTTPS service
+2. MySQL service exposed
+3. Multiple unnecessary services increasing attack surface
+4. Development stack accessible on the network
+5. Potential for exploitation via web vulnerabilities
+
+Overall Risk Assessment:
+High risk configuration detected. Immediate remediation recommended.
